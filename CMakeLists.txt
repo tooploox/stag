@@ -15,8 +15,8 @@ set(CMAKE_C_STANDARD_REQUIRED ON CACHE BOOL "Forcing C11 standard in all targets
 if(MSVC)
   add_compile_options(/WX)
   add_compile_options(
-    "$<$<CONFIG:RELEASE>:/MD>"
-    "$<$<CONFIG:DEBUG>:/MDd>"
+    "$<$<CONFIG:RELEASE>:/MT>"
+    "$<$<CONFIG:DEBUG>:/MTd>"
   )
   set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 else()
