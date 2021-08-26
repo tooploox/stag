@@ -50,3 +50,5 @@ target_link_libraries(stag_markers
 if(MSVC)
   target_compile_options(stag_markers PRIVATE /wd4018 /wd4244 /wd4267)
 endif()
+
+install(TARGETS stag_markers)
